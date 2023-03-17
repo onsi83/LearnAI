@@ -13,7 +13,14 @@
 
   <!-- Ajouter le code HTML de votre démo ici -->
 
-  <include src="/menu.html"></include>
+  <div class="menu-container" id="menu-container"></div>
+  <script>
+  $(function(){
+    $("#menu-container").load("/path/to/menu.html");
+  });
+  </script>
+  
+    
 
 
   Hello Onsi

@@ -11,11 +11,28 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    function includeMenu() {
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("menu").innerHTML = this.responseText;
+        }
+      };
+      xhr.open("GET", "menu.html", true);
+      xhr.send();
+    }
+    window.onload = includeMenu;
+  </script>
+
   
 </head>
 <body>
 
-  <include src="menu.html"></include>
+  <header id="menu"></header>
 
 
 	<h1>Chat avec GPT-3</h1>

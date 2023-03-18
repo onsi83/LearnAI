@@ -28,6 +28,13 @@
     window.onload = includeMenu;
   </script>
 
+<script>
+  $(document).ready(function() {
+    $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
+  });
+  </script>
+  
+
   
 </head>
 <body>

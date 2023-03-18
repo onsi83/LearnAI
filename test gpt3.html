@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Chatbot GPT-3</title>
+    <link rel="stylesheet" href="style.css">
+
+<style>
+
+.chat-window {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  font-family: Arial, sans-serif;
+}
+
+.chat-header {
+  background-color: #1e90ff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+.chat-body {
+  padding: 10px;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-message {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+.chat-message.sent {
+  align-self: flex-end;
+  background-color: #1e90ff;
+  color: #fff;
+}
+
+.chat-footer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.message-input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.send-button {
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
+</style>
+
+
+  </head>
+  <body>
+    <div class="chat-window">
+      <div class="chat-header">
+        <h1>Chatbot GPT-3</h1>
+      </div>
+      <div class="chat-body">
+        <div class="chat-messages"></div>
+      </div>
+      <div class="chat-footer">
+        <input type="text" class="message-input" placeholder="Type your message...">
+        <button class="send-button">Send</button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@openai/chat-api@1.1.0/dist/index.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

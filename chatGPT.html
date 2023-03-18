@@ -1,6 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+
+
+
+  <!-- Inclure les fichiers CSS de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    function includeMenu() {
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("menu").innerHTML = this.responseText;
+        }
+      };
+      xhr.open("GET", "menu.html", true);
+      xhr.send();
+    }
+    window.onload = includeMenu;
+  </script>
+
+<script>
+  $(document).ready(function() {
+    $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
+  });
+  </script>
+  
+
+
+
+
+
     <meta charset="utf-8">
     <title>ChatGPT Widget</title>
     <style>
@@ -89,7 +128,7 @@
     <script>
       // Add the JavaScript code that sends and receives messages from the OpenAI API
       const apiEndpoint = 'https://api.openai.com/v1/engines/davinci-codex/completions';
-      const apiKey = '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';
+      const apiKey = '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';
       const messageList = document.getElementById('chatgpt-message-list');
       const inputField = document.getElementById('chatgpt-input');
       const sendButton = document.getElementById('chatgpt-send');

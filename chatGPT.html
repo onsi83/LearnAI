@@ -1,160 +1,146 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>ChatGPT Widget</title>
-  <style>
-    /* Customize the appearance of the widget */
-    #chatgpt-widget {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      border-radius: 5px;
-      background-color: #fff;
-      border: 1px solid #ddd;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-      z-index: 9999;
-      width: 300px;
-      height: 500px;
-    }
-    #chatgpt-header {
-      background-color: #007bff;
-      color: #fff;
-      padding: 10px;
-      font-size: 18px;
-      font-weight: bold;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-    }
-    #chatgpt-message-list {
-      padding: 10px;
-      overflow-y: auto;
-      height: 400px;
-    }
-    #chatgpt-message {
-      margin-bottom: 10px;
-      padding: 5px;
-      border-radius: 5px;
-    }
-    #chatgpt-message.user {
-      background-color: #ddd;
-    }
-    #chatgpt-message.bot {
-      background-color: #f0f0f0;
-    }
-    #chatgpt-input-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-      border-top: 1px solid #ddd;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      box-sizing: border-box;
-    }
-    #chatgpt-input {
-      flex-grow: 1;
-      padding: 5px;
-      border-radius: 5px;
-      border: 1px solid #ddd;
-      margin-right: 10px;
-    }
-    #chatgpt-send {
-      background-color: #007bff;
-      color: #fff;
-      padding: 5px 10px;
-      border-radius: 5px;
-      border: none;
-      cursor: pointer;
-    }
-  </style>
-
-
-
-  <!-- Inclure les fichiers CSS de Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  
-  
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-  <script>
-    function includeMenu() {
-      var xhr = new XMLHttpRequest();
-      xhr.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-          document.getElementById("menu").innerHTML = this.responseText;
+    <meta charset="utf-8">
+    <title>ChatGPT Widget</title>
+    <style>
+        /* Customize the appearance of the widget */
+        #chatgpt-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            border-radius: 5px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            z-index: 9999;
+            width: 300px;
+            height: 500px;
         }
-      };
-      xhr.open("GET", "menu.html", true);
-      xhr.send();
-    }
-    window.onload = includeMenu;
-  </script>
-
-<script>
-  $(document).ready(function() {
-    $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
-  });
-  </script>
-  
-
-
-
-
-
-
-
+        #chatgpt-header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        #chatgpt-message-list {
+            padding: 10px;
+            overflow-y: auto;
+            height: 400px;
+        }
+        #chatgpt-message {
+            margin-bottom: 10px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        #chatgpt-message.user {
+            background-color: #ddd;
+        }
+        #chatgpt-message.bot {
+            background-color: #f0f0f0;
+        }
+        #chatgpt-input-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #chatgpt-input {
+            flex-grow: 1;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-right: 10px;
+        }
+        #chatgpt-send {
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-
-
-  <!-- Ajouter le code HTML de votre démo ici -->
-
-  <!-- <header>
-    <object type="text/html" data="menu.html" width="100%" height="100"></object>
-  </header> -->
-
-  <header id="menu"></header>
-
-
-
-
-  <!-- Add the ChatGPT widget HTML code to your page -->
-  <div id="chatgpt-widget">
-    <div id="chatgpt-header">
-      ChatGPT
+    <!-- Add the ChatGPT widget HTML code to your page -->
+    <div id="chatgpt-widget">
+        <div id="chatgpt-header">
+            ChatGPT
+        </div>
+        <div id="chatgpt-message-list">
+            <!-- The chat message list will be populated by JavaScript code -->
+        </div>
+        <div id="chatgpt-input-container">
+            <input id="chatgpt-input" type="text" placeholder="Type your message...">
+            <button id="chatgpt-send">Send</button>
+        </div>
     </div>
-    <div id="chatgpt-message-list">
-      <!-- The chat message list will be populated by JavaScript code -->
-    </div>
-    <div id="chatgpt-input-container">
-      <input id="chatgpt-input" type="text" placeholder="Type your message...">
-      <button id="chatgpt-send">Send</button>
-    </div>
-  </div>
-  <script>
-    // Add the JavaScript code that sends and receives messages from the OpenAI API
+    
 
-    // Make a request to the OpenAI API with the user's message
-const response = await fetch('https://api.openai.com/v1/engines/davinci-codex/completions', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-    'Authorization': 'https://api.openai.com/v1/engines/davinci-codex/completions'
-  },
-  body: JSON.stringify({
-    prompt: 'User: ' + userMessage + '\nChatGPT:',
-    max_tokens: 60,
-    temperature: 0.5
-  })
-});
-
-// Get the chatbot's response from the API
-const data = await response.json();
-const chatbotResponse = data.choices[0].text.trim();
-
+    <script>
+      // Add the JavaScript code that sends and receives messages from the OpenAI API
+      const apiEndpoint = 'https://api.openai.com/v1/engines/davinci-codex/completions';
+      const apiKey = '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';
+      const messageList = document.getElementById('chatgpt-message-list');
+      const inputField = document.getElementById('chatgpt-input');
+      const sendButton = document.getElementById('chatgpt-send');
+      
+      // Send a message to the OpenAI API and add the response to the message list
+      function sendMessage() {
+          const message = inputField.value;
+          if (!message) {
+              return;
+          }
+          inputField.value = '';
+          const messageElement = document.createElement('div');
+          messageElement.innerText = message;
+          messageElement.classList.add('user');
+          messageList.appendChild(messageElement);
+          const requestBody = {
+              prompt: message,
+              max_tokens: 50,
+              temperature: 0.5,
+              n: 1,
+              stop: '\n',
+          };
+          fetch(apiEndpoint, {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+                  'Authorization': `Bearer ${apiKey}`
+              },
+              body: JSON.stringify(requestBody)
+          })
+          .then(response => response.json())
+          .then(data => {
+              const responseMessage = data.choices[0].text.trim();
+              const responseElement = document.createElement('div');
+              responseElement.innerText = responseMessage;
+              responseElement.classList.add('bot');
+              messageList.appendChild(responseElement);
+              messageList.scrollTop = messageList.scrollHeight;
+          })
+          .catch(error => {
+              console.error(error);
+          });
+      }
+      
+      // Send the message when the Send button is clicked or Enter key is pressed
+      sendButton.addEventListener('click', sendMessage);
+      inputField.addEventListener('keydown', event => {
+          if (event.key === 'Enter') {
+              sendMessage();
+          }
+      });
+  </script>
+</body>
+</html>

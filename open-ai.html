@@ -34,12 +34,60 @@
   });
   </script>
   
+<script>
 
+
+// Récupérer le chemin de la page actuelle
+var path = window.location.pathname;
+// Trouver l'élément <a> correspondant dans la navbar et ajouter les classes "active" et "nav-link"
+$('.navbar-nav a[href="' + path + '"]').addClass('active').addClass('nav-link');
+
+
+
+</script>
   
 </head>
 <body>
 
   <header id="menu"></header>
+
+
+
+
+
+      <!--Ajoutez ce code où vous voulez afficher votre chatbot GPT-3-->
+      <div id="chatbot-container"></div>
+
+      <!--Inclure le code du chatbot GPT-3 fourni par OpenAI-->
+      <script src="https://cdn.jsdelivr.net/npm/@openai/chatbot@0.1.1/build/chatbot.min.js"></script>
+  
+      <script>
+        //Configuration du chatbot GPT-3
+        const chatbot = new Chatbot({
+          //Incluez votre clé API OpenAI
+          apiKey: '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',
+          //Incluez l'ID de l'assistant GPT-3 que vous souhaitez utiliser
+          //Vous pouvez trouver l'ID de votre assistant dans le portail OpenAI
+          assistantId: 'YOUR_ASSISTANT_ID',
+          //Optionnel : personnalisé la couleur du chatbot pour correspondre à votre site Web
+          colors: {
+            brandBackground: '#4CAF50',
+            brandColor: '#FFFFFF',
+            userBackground: '#EEEEEE',
+            userColor: '#222222'
+          }
+        });
+  
+        //Ajouter le chatbot à la page
+        chatbot.mount('#chatbot-container');
+      </script>
+
+
+
+
+
+
+
 
 
 	<h1>Chat avec GPT-3</h1>

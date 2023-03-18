@@ -8,25 +8,42 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-
+  
+  
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
+
+  <script>
+    function includeMenu() {
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("menu").innerHTML = this.responseText;
+        }
+      };
+      xhr.open("GET", "menu.html", true);
+      xhr.send();
+    }
+    window.onload = includeMenu;
+  </script>
 
 </head>
 <body>
 
   <!-- Ajouter le code HTML de votre démo ici -->
 
-  <div id="menu"></div>
+  <!-- <header>
+    <object type="text/html" data="menu.html" width="100%" height="100"></object>
+  </header> -->
 
-  <script>
-    $(function(){
-      $("#menu").load("menu.html");
-    });
-    </script>
-  
+  <header id="menu"></header>
 
 
+  <main>
+    <!-- contenu de la page -->
+  </main>
+  <footer>
+    <!-- contenu du pied de page -->
+  </footer>
 
   Hello Onsi
 

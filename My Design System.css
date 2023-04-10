@@ -2,4 +2,30 @@
     background-color: #FFC107;
     font-size: 1.25rem;
   }
+
+/* Text style */
+
+body {
+  font-family: 'Inter', sans-serif; /* famille de police */
+  font-size: 16px; /* taille de police */
+  line-height: 1.5; /* ligne de base */
+  color: #333; /* couleur de texte */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roobert', sans-serif; /* famille de police */
+  font-weight: 600; /* poids de police */
+  line-height: 1.2; /* ligne de base */
+}
+
+a {
+  color: #007bff; /* couleur de lien */
+  text-decoration: none; /* style de soulignement de lien */
+}
+
+a:hover {
+  text-decoration: underline; /* style de soulignement de lien au survol */
+}
+
+  
   

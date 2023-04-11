@@ -13,7 +13,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roobert', sans-serif; /* famille de police */
+  font-family: 'Roobert Semibold', sans-serif; /* famille de police */
   font-weight: 600; /* poids de police */
   line-height: 1.2; /* ligne de base */
 }
@@ -42,34 +42,34 @@ a:hover {
 
 
 @font-face {
-  font-family: 'Roobert Regular';
+  font-family: 'Roobert Medium';
   src: url('Font/Roobert-Medium.woff2') format('woff2'),
        url('Font/Roobert-Medium.woff') format('woff'),
        url('Font/Roobert-Medium.ttf') format('truetype'),
        url('Font/Roobert-Medium.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+  font-weight: medium;
+  font-style: medium;
 }
 
 
 @font-face {
-  font-family: 'Roobert Regular';
+  font-family: 'Roobert Semibold';
   src: url('Font/Roobert-SemiBold.woff2') format('woff2'),
        url('Font/Roobert-SemiBold.woff') format('woff'),
        url('Font/Roobert-SemiBold.ttf') format('truetype'),
        url('Font/Roobert-SemiBold.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+  font-weight: semibold;
+  font-style: semibold;
 }
 
 
 @font-face {
-  font-family: 'Roobert Regular';
+  font-family: 'Roobert Bold';
   src: url('Font/Roobert-Bold.woff2') format('woff2'),
        url('Font/Roobert-Bold.woff') format('woff'),
        url('Font/Roobert-Bold.ttf') format('truetype'),
        url('Font/Roobert-Bold.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+  font-weight: bold;
+  font-style: bold;
 }
   

@@ -13,7 +13,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roobert Semibold', sans-serif; /* famille de police */
+  font-family: 'Roobert', sans-serif; /* famille de police */
   font-weight: 600; /* poids de police */
   line-height: 1.2; /* ligne de base */
 }
@@ -31,7 +31,7 @@ a:hover {
 
 
 @font-face {
-  font-family: 'Roobert Regular';
+  font-family: 'Roobert';
   src: url('Font/Roobert-Regular.woff2') format('woff2'),
        url('Font/Roobert-Regular.woff') format('woff'),
        url('Font/Roobert-Regular.ttf') format('truetype'),

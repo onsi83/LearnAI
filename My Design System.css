@@ -27,5 +27,49 @@ a:hover {
   text-decoration: underline; /* style de soulignement de lien au survol */
 }
 
-  
+ 
+
+
+@font-face {
+  font-family: 'Roobert Regular';
+  src: url('Font/Roobert-Regular.woff2') format('woff2'),
+       url('Font/Roobert-Regular.woff') format('woff'),
+       url('Font/Roobert-Regular.ttf') format('truetype'),
+       url('Font/Roobert-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Roobert Regular';
+  src: url('Font/Roobert-Medium.woff2') format('woff2'),
+       url('Font/Roobert-Medium.woff') format('woff'),
+       url('Font/Roobert-Medium.ttf') format('truetype'),
+       url('Font/Roobert-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Roobert Regular';
+  src: url('Font/Roobert-SemiBold.woff2') format('woff2'),
+       url('Font/Roobert-SemiBold.woff') format('woff'),
+       url('Font/Roobert-SemiBold.ttf') format('truetype'),
+       url('Font/Roobert-SemiBold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Roobert Regular';
+  src: url('Font/Roobert-Bold.woff2') format('woff2'),
+       url('Font/Roobert-Bold.woff') format('woff'),
+       url('Font/Roobert-Bold.ttf') format('truetype'),
+       url('Font/Roobert-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
   

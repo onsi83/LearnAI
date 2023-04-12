@@ -1,0 +1,1027 @@
+
+<style>
+
+.kRxsqs {
+    display: flex !important;
+    -webkit-box-align: center !important;
+    align-items: center !important;
+    background-color: var(--color-background-alt) !important;
+    box-shadow: var(--shadow-elevation-2) !important;
+    width: 100% !important;
+    border-top: var(--border-width-default) solid var(--color-border-base) !important;
+    border-right: var(--border-width-default) solid var(--color-border-base) !important;
+    border-left: var(--border-width-default) solid var(--color-border-base) !important;
+}
+
+.fZnQzg {
+    --color-accent: #1feaff;
+    --color-accent-label: #000000;
+    --color-accent-hover: #00d6ed;
+    --color-background-button-purchase: rgba(255,255,255,0.22);
+    --color-accent-primary-1: #00535c;
+    --color-accent-primary-2: #006671;
+    --color-accent-primary-3: #008391;
+    --color-accent-primary-4: #00dff6;
+    --color-accent-primary-5: #1feaff;
+}
+
+
+
+.gkNHFz {
+    --color-background-accent: #008391;
+    --color-background-accent-alt: #006671;
+    --color-background-accent-alt-2: #00535c;
+    --color-text-button: #000000;
+    --color-text-button-primary: #000000;
+    --color-text-link: #006671;
+    --color-text-link-active: #00535c;
+    --color-text-link-focus: #00535c;
+    --color-text-link-hover: #00535c;
+    --color-text-link-visited: #006671;
+    --color-background-interactable-selected: #008391;
+    --color-background-button-primary-default: #1feaff;
+    --color-background-button-primary-hover: #00d6ed;
+    --color-background-button-primary-active: #1feaff;
+    --color-text-button-text: #006671;
+    --color-text-button-text-active: #00535c;
+    --color-text-button-text-focus: #00535c;
+    --color-text-button-text-hover: #00535c;
+    --color-fill-button-icon: #00535c;
+    --color-fill-button-icon-hover: #00535c;
+    --color-fill-button-icon-focus: #00535c;
+    --color-fill-button-icon-active: #00535c;
+    --color-border-input-focus: #008391;
+    --color-background-input-checked: #006671;
+    --color-background-input-checkbox-checked: #006671;
+    --color-border-input-checkbox-checked: #006671;
+    --color-border-input-checkbox-focus: #006671;
+    --color-background-toggle-handle-checked: #006671;
+    --color-border-toggle-focus: #006671;
+    --color-border-toggle-checked: #006671;
+    --color-text-toggle-checked-icon: #006671;
+    --color-background-range-fill: #006671;
+    --color-background-progress-status: #006671;
+}
+
+body {
+    background-color: #f7f7f8;
+    font-display: optional;
+    font-family: Inter,Roobert,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: var(--font-base);
+    overflow: hidden;
+}
+
+body, html {
+    line-height: 1.5;
+}
+
+body {
+    background-color: #0e0e10;
+    background-color: var(--color-background-body);
+    color: #efeff1;
+    color: var(--color-text-base);
+    font-size: 1.3rem;
+    font-size: var(--font-size-base);
+    line-height: 2rem;
+}
+
+body {
+    line-height: 1;
+}
+
+.tw-root--theme-light {
+    --color-background-button: var(--color-twitch-purple-7);
+    --color-background-button-hover: var(--color-twitch-purple-8);
+    --color-background-button-focus: var(--color-twitch-purple-8);
+    --color-background-button-active: var(--color-twitch-purple-7);
+    --color-background-button-purchase: var(--color-opac-b-5);
+    --color-background-button-status: var(--color-background-button-success);
+    --color-background-button-status-hover: var(--color-background-button-error-hover);
+    --color-background-button-status-focus: var(--color-background-button-error-hover);
+    --color-background-button-status-active: var(--color-background-button-error-active);
+    --color-background-button-success-focus: var(--color-green-darker);
+    --color-background-button-alert: var(--color-red);
+    --color-background-button-alert-hover: var(--color-red-darker);
+    --color-background-button-alert-focus: var(--color-red-darker);
+    --color-background-button-alert-active: var(--color-red);
+    --color-background-button-overlay: var(--color-transparent);
+    --color-background-button-overlay-hover: var(--color-opac-w-1);
+    --color-background-button-overlay-focus: var(--color-opac-w-1);
+    --color-background-button-overlay-active: var(--color-opac-w-2);
+    --color-background-interactable-alpha-hover: var(--color-opac-b-1);
+    --color-background-interactable-alpha-active: var(--color-opac-b-2);
+    --color-background-interactable-alpha-selected: var(--color-opac-b-1);
+    --color-text-button: var(--color-white);
+    --color-text-button-hover: var(--color-white);
+    --color-text-button-focus: var(--color-white);
+    --color-text-button-active: var(--color-white);
+    --color-text-button-secondary-hover: var(--color-hinted-grey-9);
+    --color-text-button-secondary-focus: var(--color-hinted-grey-9);
+    --color-text-button-secondary-active: var(--color-hinted-grey-9);
+    --color-text-button-text-focus: var(--color-opac-p-1);
+    --color-text-button-text-active: var(--color-transparent);
+    --color-text-button-status: var(--color-white);
+    --color-text-button-status-hover: var(--color-white);
+    --color-text-button-status-focus: var(--color-white);
+    --color-text-button-status-active: var(--color-white);
+    --color-text-button-success-hover: var(--color-black);
+    --color-text-button-success-focus: var(--color-black);
+    --color-text-button-success-active: var(--color-black);
+    --color-text-button-alert: var(--color-black);
+    --color-text-button-alert-hover: var(--color-black);
+    --color-text-button-alert-focus: var(--color-black);
+    --color-text-button-alert-active: var(--color-black);
+    --color-text-button-overlay: var(--color-white);
+    --color-text-button-overlay-hover: var(--color-white);
+    --color-text-button-overlay-focus: var(--color-white);
+    --color-text-button-overlay-active: var(--color-white);
+    --color-text-interactable: currentColor;
+    --color-text-interactable-hover: var(--color-white);
+    --color-text-interactable-active: var(--color-white);
+    --color-text-interactable-inverted: var(--color-white);
+    --color-text-input-focus: transparent;
+}
+
+.tw-root--theme-dark, :root {
+    --color-background-button: var(--color-twitch-purple-7);
+    --color-background-button-hover: var(--color-twitch-purple-8);
+    --color-background-button-focus: var(--color-twitch-purple-8);
+    --color-background-button-active: var(--color-twitch-purple-7);
+    --color-background-button-purchase: var(--color-opac-b-5);
+    --color-background-button-status: var(--color-background-button-success);
+    --color-background-button-status-hover: var(--color-background-button-error-hover);
+    --color-background-button-status-focus: var(--color-background-button-error-hover);
+    --color-background-button-status-active: var(--color-background-button-error-active);
+    --color-background-button-success-focus: var(--color-green-darker);
+    --color-background-button-alert: var(--color-red);
+    --color-background-button-alert-hover: var(--color-red-darker);
+    --color-background-button-alert-focus: var(--color-red-darker);
+    --color-background-button-alert-active: var(--color-red);
+    --color-background-button-overlay: var(--color-transparent);
+    --color-background-button-overlay-hover: var(--color-opac-w-1);
+    --color-background-button-overlay-focus: var(--color-opac-w-1);
+    --color-background-button-overlay-active: transparent;
+    --color-background-interactable-alpha-hover: var(--color-opac-w-4);
+    --color-background-interactable-alpha-active: var(--color-opac-w-5);
+    --color-background-interactable-alpha-selected: var(--color-opac-w-3);
+    --color-text-button: var(--color-white);
+    --color-text-button-hover: var(--color-white);
+    --color-text-button-focus: var(--color-white);
+    --color-text-button-active: var(--color-white);
+    --color-text-button-secondary-hover: var(--color-hinted-grey-6);
+    --color-text-button-secondary-focus: var(--color-hinted-grey-6);
+    --color-text-button-secondary-active: var(--color-hinted-grey-6);
+    --color-text-button-text-focus: var(--color-opac-w-1);
+    --color-text-button-text-active: var(--color-opac-p-2);
+    --color-text-button-status: var(--color-white);
+    --color-text-button-status-hover: var(--color-white);
+    --color-text-button-status-focus: var(--color-white);
+    --color-text-button-status-active: var(--color-white);
+    --color-text-button-success-hover: var(--color-black);
+    --color-text-button-success-focus: var(--color-black);
+    --color-text-button-success-active: var(--color-black);
+    --color-text-button-alert: var(--color-black);
+    --color-text-button-alert-hover: var(--color-black);
+    --color-text-button-alert-focus: var(--color-black);
+    --color-text-button-alert-active: var(--color-black);
+    --color-text-button-overlay: var(--color-white);
+    --color-text-button-overlay-hover: var(--color-white);
+    --color-text-button-overlay-focus: var(--color-white);
+    --color-text-button-overlay-active: var(--color-white);
+    --color-text-interactable: currentColor;
+    --color-text-interactable-hover: var(--color-white);
+    --color-text-interactable-active: var(--color-white);
+    --color-text-interactable-inverted: var(--color-white);
+    --color-text-input-focus: transparent;
+}
+
+:root {
+    --border-width-default: 1px;
+    --border-width-input: 2px;
+    --border-width-input-overlay-unfocused: 1px;
+    --border-width-marked: 3px;
+    --border-width-spinner: 2px;
+    --border-width-tag: 2px;
+    --border-radius-none: 0;
+    --border-radius-small: 0.2rem;
+    --border-radius-medium: 0.4rem;
+    --border-radius-large: 0.6rem;
+    --border-radius-extra-large: 1rem;
+    --border-radius-extra-extra-large: 1.6rem;
+    --border-radius-rounded: 9000px;
+    --break-xs: 480px;
+    --break-sm: 768px;
+    --break-md: 1024px;
+    --break-lg: 1200px;
+    --break-xl: 1440px;
+    --break-xxl: 1600px;
+    --color-brand-muted-ice: #d6e4ff;
+    --color-brand-muted-cupcake: #ffa3ee;
+    --color-brand-muted-mint: #5cffbe;
+    --color-brand-muted-sky: #7aa7ff;
+    --color-brand-muted-blush: #ffcdcc;
+    --color-brand-muted-canary: #ebeb00;
+    --color-brand-muted-smoke: #d3d3d9;
+    --color-brand-muted-lavender: #d1b3ff;
+    --color-brand-muted-mustard: #ffd37a;
+    --color-brand-muted-emerald: #00f593;
+    --color-brand-muted-coral: #ff8280;
+    --color-brand-muted-ocean: #1345aa;
+    --color-brand-accent-grape: #5c16c5;
+    --color-brand-accent-dragonfruit: #ff38db;
+    --color-brand-accent-carrot: #e69900;
+    --color-brand-accent-sun: #ebeb00;
+    --color-brand-accent-lime: #00f593;
+    --color-brand-accent-turquoise: #00f0f0;
+    --color-brand-accent-eggplant: #451093;
+    --color-brand-accent-wine: #ae1392;
+    --color-brand-accent-slime: #00f593;
+    --color-brand-accent-seafoam: #5cffbe;
+    --color-brand-accent-cherry: #eb0400;
+    --color-brand-accent-marine: #1f69ff;
+    --color-brand-accent-seaweed: #00a3a3;
+    --color-brand-accent-pebble: #848494;
+    --color-brand-accent-moon: #efeff1;
+    --color-brand-accent-fiji: #5cffbe;
+    --color-brand-accent-blueberry: #1f69ff;
+    --color-brand-accent-arctic: #00f0f0;
+    --color-brand-accent-highlighter: #f5f500;
+}
+
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    font-size: 62.5%;
+}
+
+
+
+.stream-schedule-times {
+    height: 4rem;
+}
+
+.cmromA {
+    margin-bottom: 1rem !important;
+    display: flex !important;
+}
+
+
+.stream-schedule-week {
+    text-align: center;
+    width: 8rem;
+}
+
+.bmZVfJ {
+    height: 100% !important;
+    padding-left: 1rem !important;
+    display: flex !important;
+    -webkit-box-align: center !important;
+    align-items: center !important;
+}
+
+.fmXved {
+    display: flex !important;
+    margin-bottom: 5rem !important;
+    border-radius: 0.6rem !important;
+}
+
+
+.iQXLbi {
+    border-bottom: var(--border-width-default) solid var(--color-border-base) !important;
+    border-left: var(--border-width-default) solid var(--color-border-base) !important;
+    -webkit-box-flex: 0 !important;
+    flex-grow: 0 !important;
+    flex-shrink: 0 !important;
+}
+
+.kgmVvx {
+    width: 100% !important;
+    border-bottom: var(--border-width-default) solid var(--color-border-base) !important;
+    border-right: var(--border-width-default) solid var(--color-border-base) !important;
+}
+
+.kOwxmY {
+    border-radius: 0.6rem !important;
+    width: 100% !important;
+    position: relative !important;
+    z-index: var(--z-index-above) !important;
+}
+
+.stream-schedule-day, .stream-schedule-day-name {
+    height: 9rem;
+}
+
+.kViuhR {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    position: relative !important;
+}
+
+
+.dIbfID {
+    display: flex !important;
+    -webkit-box-align: center !important;
+    align-items: center !important;
+    position: absolute !important;
+    height: 100% !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+<div class="ScTransitionBase-sc-hx4quq-0 bUHYlK tw-transition">
+    <div class="ScTokenOverrideCSSVars-sc-13alv3m-0 gkNHFz">
+        <div class="ScAccentRegionCssVars-sc-1gab5n-0 fZnQzg">
+            <div class="Layout-sc-1xcs6mc-0 fndsOA stream-schedule__header">
+                <div class="Layout-sc-1xcs6mc-0 bFcacF">
+                    <h2 data-test-selector="schedule-caption"
+                        class="CoreText-sc-1txzju1-0 ScTitleText-sc-d9mj2s-0 MGmly igzOaC tw-title">Jolavanille est en
+                        live&nbsp;!</h2>
+                </div>
+                <div class="Layout-sc-1xcs6mc-0 cmromA">
+                    <div class="Layout-sc-1xcs6mc-0 bTJhJp"><button
+                            class="ScCoreButton-sc-ocjdkq-0 ScCoreButtonPrimary-sc-ocjdkq-1 ibtYyW wgheP"
+                            state="default" data-test-selector="schedule-traversal__today-button">
+                            <div class="ScCoreButtonLabel-sc-s7h2b7-0 kHQqnO">
+                                <div data-a-target="tw-core-button-label-text" class="Layout-sc-1xcs6mc-0 ktFzpA">
+                                    <div class="Layout-sc-1xcs6mc-0 dsWNQt">Aujourd'hui</div>
+                                </div>
+                            </div>
+                        </button>
+                        <div class="Layout-sc-1xcs6mc-0 fehFCR">
+                            <div class="InjectLayout-sc-1i43xsx-0 dVOhMf"><button
+                                    class="ScCoreButton-sc-ocjdkq-0 ScCoreButtonSecondary-sc-ocjdkq-2 ibtYyW bTKXKk"
+                                    state="default" aria-label="Semaine précédente"
+                                    data-test-selector="schedule-traversal__back-button">
+                                    <div class="ScCoreButtonLabel-sc-s7h2b7-0 irroFV">
+                                        <div class="Layout-sc-1xcs6mc-0 eSzRec">
+                                            <div class="ScCoreButtonIcon-sc-ypak37-0 nHEIR tw-core-button-icon">
+                                                <div data-a-selector="tw-core-button-icon"
+                                                    class="ScIconLayout-sc-1q25cff-0 cMWGQu">
+                                                    <div class="ScAspectRatio-sc-18km980-1 hTTohL tw-aspect">
+                                                        <div class="ScAspectSpacer-sc-18km980-0 kiiGFY"></div><svg
+                                                            width="100%" height="100%" version="1.1" viewBox="0 0 20 20"
+                                                            x="0px" y="0px" class="ScIconSVG-sc-1q25cff-1 dSicFr">
+                                                            <g>
+                                                                <path
+                                                                    d="M13.5 14.5L9 10l4.5-4.5L12 4l-6 6 6 6 1.5-1.5z">
+                                                                </path>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button></div>
+                        </div>
+                        <div class="InjectLayout-sc-1i43xsx-0 dVOhMf"><button
+                                class="ScCoreButton-sc-ocjdkq-0 ScCoreButtonSecondary-sc-ocjdkq-2 ibtYyW bTKXKk"
+                                state="default" aria-label="Semaine prochaine"
+                                data-test-selector="schedule-traversal__forward-button">
+                                <div class="ScCoreButtonLabel-sc-s7h2b7-0 irroFV">
+                                    <div class="Layout-sc-1xcs6mc-0 eSzRec">
+                                        <div class="ScCoreButtonIcon-sc-ypak37-0 nHEIR tw-core-button-icon">
+                                            <div data-a-selector="tw-core-button-icon"
+                                                class="ScIconLayout-sc-1q25cff-0 cMWGQu">
+                                                <div class="ScAspectRatio-sc-18km980-1 hTTohL tw-aspect">
+                                                    <div class="ScAspectSpacer-sc-18km980-0 kiiGFY"></div><svg
+                                                        width="100%" height="100%" version="1.1" viewBox="0 0 20 20"
+                                                        x="0px" y="0px" class="ScIconSVG-sc-1q25cff-1 dSicFr">
+                                                        <g>
+                                                            <path d="M6.5 5.5L11 10l-4.5 4.5L8 16l6-6-6-6-1.5 1.5z">
+                                                            </path>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button></div>
+                        <div class="Layout-sc-1xcs6mc-0 kaXoQh">
+                            <div class="InjectLayout-sc-1i43xsx-0 dVOhMf"><button
+                                    class="ScCoreButton-sc-ocjdkq-0 ScCoreButtonSecondary-sc-ocjdkq-2 ibtYyW bTKXKk"
+                                    data-test-selector="schedule-traversal__date-picker-button"
+                                    aria-label="Aller à la semaine">
+                                    <div class="ScLegacyButtonIconLayout-sc-1tvp3z4-0 cfyfek">
+                                        <div class="ButtonIconFigure-sc-1emm8lf-0 bxQRSJ">
+                                            <div class="ScIconLayout-sc-1q25cff-0 cMWGQu">
+                                                <div class="ScAspectRatio-sc-18km980-1 hTTohL tw-aspect">
+                                                    <div class="ScAspectSpacer-sc-18km980-0 kiiGFY"></div><svg
+                                                        width="100%" height="100%" version="1.1" viewBox="0 0 20 20"
+                                                        x="0px" y="0px" class="ScIconSVG-sc-1q25cff-1 dSicFr">
+                                                        <g>
+                                                            <path
+                                                                d="M6 9v2h2V9H6zM11 9H9v2h2V9zM12 9v2h2V9h-2zM11 12H9v2h2v-2zM6 12v2h2v-2H6zM12 12v2h2v-2h-2z">
+                                                            </path>
+                                                            <path fill-rule="evenodd"
+                                                                d="M5 2h2v1h6V2h2v1h1a2 2 0 012 2v11a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h1V2zm11 5H4v9h12V7z"
+                                                                clip-rule="evenodd"></path>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button></div>
+                            <div class="Layout-sc-1xcs6mc-0 date-picker" data-a-target="date-picker">
+                                <div class="Layout-sc-1xcs6mc-0 cGquRQ">
+                                    <div class="Layout-sc-1xcs6mc-0 bZVrjx"><input type="text"
+                                            class="ScInputBase-sc-vu7u7d-0 ScInput-sc-19xfhag-0 gXVFsI joCugN InjectLayout-sc-1i43xsx-0 kmkjpb tw-input"
+                                            autocapitalize="off" autocorrect="off" data-a-target="tw-input" value=""
+                                            aria-label="Use the arrow keys to pick a date"></div>
+                                </div>
+                                <div class="date-picker__container">
+                                    <div class="pika-single inline is-bound is-hidden"
+                                        style="position: static; left: auto; top: auto;">
+                                        <div class="pika-lendar">
+                                            <div id="pika-title-ub" class="pika-title" role="heading"
+                                                aria-live="assertive">
+                                                <div class="pika-label">avril<select
+                                                        class="pika-select pika-select-month" tabindex="-1">
+                                                        <option value="0" disabled="disabled">janvier</option>
+                                                        <option value="1">février</option>
+                                                        <option value="2">mars</option>
+                                                        <option value="3" selected="selected">avril</option>
+                                                        <option value="4">mai</option>
+                                                        <option value="5">juin</option>
+                                                        <option value="6">juillet</option>
+                                                        <option value="7">août</option>
+                                                        <option value="8">septembre</option>
+                                                        <option value="9">octobre</option>
+                                                        <option value="10">novembre</option>
+                                                        <option value="11">décembre</option>
+                                                    </select></div>
+                                                <div class="pika-label">2023<select class="pika-select pika-select-year"
+                                                        tabindex="-1">
+                                                        <option value="2023" selected="selected">2023</option>
+                                                        <option value="2024">2024</option>
+                                                    </select></div><button class="pika-prev" type="button">Mois
+                                                    dernier</button><button class="pika-next" type="button">Mois
+                                                    prochain</button>
+                                            </div>
+                                            <table cellpadding="0" cellspacing="0" class="pika-table" role="grid"
+                                                aria-labelledby="pika-title-ub">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"><abbr title="lundi">lun.</abbr></th>
+                                                        <th scope="col"><abbr title="mardi">mar.</abbr></th>
+                                                        <th scope="col"><abbr title="mercredi">mer.</abbr></th>
+                                                        <th scope="col"><abbr title="jeudi">jeu.</abbr></th>
+                                                        <th scope="col"><abbr title="vendredi">ven.</abbr></th>
+                                                        <th scope="col"><abbr title="samedi">sam.</abbr></th>
+                                                        <th scope="col"><abbr title="dimanche">dim.</abbr></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="pika-row pick-whole-week">
+                                                        <td class="is-empty"></td>
+                                                        <td class="is-empty"></td>
+                                                        <td class="is-empty"></td>
+                                                        <td class="is-empty"></td>
+                                                        <td class="is-empty"></td>
+                                                        <td data-day="1" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="1">1</button></td>
+                                                        <td data-day="2" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="2">2</button></td>
+                                                    </tr>
+                                                    <tr class="pika-row pick-whole-week">
+                                                        <td data-day="3" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="3">3</button></td>
+                                                        <td data-day="4" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="4">4</button></td>
+                                                        <td data-day="5" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="5">5</button></td>
+                                                        <td data-day="6" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="6">6</button></td>
+                                                        <td data-day="7" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="7">7</button></td>
+                                                        <td data-day="8" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="8">8</button></td>
+                                                        <td data-day="9" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="9">9</button></td>
+                                                    </tr>
+                                                    <tr class="pika-row pick-whole-week">
+                                                        <td data-day="10" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="10">10</button></td>
+                                                        <td data-day="11" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="11">11</button></td>
+                                                        <td data-day="12" class="is-today" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="12">12</button></td>
+                                                        <td data-day="13" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="13">13</button></td>
+                                                        <td data-day="14" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="14">14</button></td>
+                                                        <td data-day="15" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="15">15</button></td>
+                                                        <td data-day="16" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="16">16</button></td>
+                                                    </tr>
+                                                    <tr class="pika-row pick-whole-week">
+                                                        <td data-day="17" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="17">17</button></td>
+                                                        <td data-day="18" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="18">18</button></td>
+                                                        <td data-day="19" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="19">19</button></td>
+                                                        <td data-day="20" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="20">20</button></td>
+                                                        <td data-day="21" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="21">21</button></td>
+                                                        <td data-day="22" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="22">22</button></td>
+                                                        <td data-day="23" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="23">23</button></td>
+                                                    </tr>
+                                                    <tr class="pika-row pick-whole-week">
+                                                        <td data-day="24" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="24">24</button></td>
+                                                        <td data-day="25" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="25">25</button></td>
+                                                        <td data-day="26" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="26">26</button></td>
+                                                        <td data-day="27" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="27">27</button></td>
+                                                        <td data-day="28" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="28">28</button></td>
+                                                        <td data-day="29" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="29">29</button></td>
+                                                        <td data-day="30" class="" aria-selected="false"><button
+                                                                class="pika-button pika-day" type="button"
+                                                                data-pika-year="2023" data-pika-month="3"
+                                                                data-pika-day="30">30</button></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Layout-sc-1xcs6mc-0 iA-DzCp">
+                        <p class="CoreText-sc-1txzju1-0 ScTitleText-sc-d9mj2s-0 jKVhlu igzOaC tw-title">3 avr. 2023 – 9
+                            avr. 2023</p>
+                    </div>
+                </div>
+                <div class="Layout-sc-1xcs6mc-0 kRxsqs stream-schedule-times"
+                    style="border-top-left-radius: var(--border-radius-large); border-top-right-radius: var(--border-radius-large);">
+                    <div class="stream-schedule-week">
+                        <p class="CoreText-sc-1txzju1-0 htrmFW">GMT+2</p>
+                    </div>
+                    <div class="Layout-sc-1xcs6mc-0 bmZVfJ" style="flex-basis: 113px;">
+                        <p class="CoreText-sc-1txzju1-0 hronDY">15:00</p>
+                    </div>
+                    <div class="Layout-sc-1xcs6mc-0 bmZVfJ" style="flex-basis: 113px;">
+                        <p class="CoreText-sc-1txzju1-0 hronDY">17:00</p>
+                    </div>
+                    <div class="Layout-sc-1xcs6mc-0 bmZVfJ" style="flex-basis: 113px;">
+                        <p class="CoreText-sc-1txzju1-0 hronDY">19:00</p>
+                    </div>
+                    <div class="Layout-sc-1xcs6mc-0 bmZVfJ" style="flex-basis: 113px;">
+                        <p class="CoreText-sc-1txzju1-0 hronDY">21:00</p>
+                    </div>
+                    <div class="Layout-sc-1xcs6mc-0 bmZVfJ" style="flex-basis: 113px;">
+                        <p class="CoreText-sc-1txzju1-0 hronDY">23:00</p>
+                    </div>
+                    <div class="Layout-sc-1xcs6mc-0 bmZVfJ" style="flex-basis: 113px;">
+                        <p class="CoreText-sc-1txzju1-0 hronDY">01:00</p>
+                    </div>
+                    <div class="Layout-sc-1xcs6mc-0 bmZVfJ" style="flex-basis: 113px;">
+                        <p class="CoreText-sc-1txzju1-0 hronDY">03:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Layout-sc-1xcs6mc-0 fmXved">
+                <div class="Layout-sc-1xcs6mc-0 iQXLbi stream-schedule-week"
+                    style="border-bottom-left-radius: var(--border-radius-large);">
+                    <div class="Layout-sc-1xcs6mc-0 idpcGQ stream-schedule-day-name">
+                        <div class="Layout-sc-1xcs6mc-0 kTNKvx">
+                            <p class="CoreText-sc-1txzju1-0 hronDY">lun.</p>
+                        </div>
+                        <p class="CoreText-sc-1txzju1-0 bqNDUB">03/04</p>
+                    </div>
+                    <div class="Layout-sc-1xcs6mc-0 idpcGQ stream-schedule-day-name">
+                        <div class="Layout-sc-1xcs6mc-0 kTNKvx">
+                            <p class="CoreText-sc-1txzju1-0 hronDY">mar.</p>
+                        </div>
+                        <p class="CoreText-sc-1txzju1-0 bqNDUB">04/04</p>
+                    </div>
+                    <div class="Layout-sc-1xcs6mc-0 idpcGQ stream-schedule-day-name">
+                        <div class="Layout-sc-1xcs6mc-0 kTNKvx">
+                            <p class="CoreText-sc-1txzju1-0 hronDY">mer.</p>
+                        </div>
+                        <p class="CoreText-sc-1txzju1-0 bqNDUB">05/04</p>
+                    </div>
+                    <div class="Layout-sc-1xcs6mc-0 idpcGQ stream-schedule-day-name">
+                        <div class="Layout-sc-1xcs6mc-0 kTNKvx">
+                            <p class="CoreText-sc-1txzju1-0 hronDY">jeu.</p>
+                        </div>
+                        <p class="CoreText-sc-1txzju1-0 bqNDUB">06/04</p>
+                    </div>
+                    <div class="Layout-sc-1xcs6mc-0 idpcGQ stream-schedule-day-name">
+                        <div class="Layout-sc-1xcs6mc-0 kTNKvx">
+                            <p class="CoreText-sc-1txzju1-0 hronDY">ven.</p>
+                        </div>
+                        <p class="CoreText-sc-1txzju1-0 bqNDUB">07/04</p>
+                    </div>
+                    <div class="Layout-sc-1xcs6mc-0 idpcGQ stream-schedule-day-name">
+                        <div class="Layout-sc-1xcs6mc-0 kTNKvx">
+                            <p class="CoreText-sc-1txzju1-0 hronDY">sam.</p>
+                        </div>
+                        <p class="CoreText-sc-1txzju1-0 bqNDUB">08/04</p>
+                    </div>
+                    <div class="Layout-sc-1xcs6mc-0 idpcGQ stream-schedule-day-name">
+                        <div class="Layout-sc-1xcs6mc-0 kTNKvx">
+                            <p class="CoreText-sc-1txzju1-0 hronDY">dim.</p>
+                        </div>
+                        <p class="CoreText-sc-1txzju1-0 bqNDUB">09/04</p>
+                    </div>
+                </div>
+                <div class="Layout-sc-1xcs6mc-0 kgmVvx"
+                    style="border-bottom-right-radius: var(--border-radius-large); position: relative;">
+                    <div class="resize-detector">
+                        <div class="resize-detector">
+                            <div class="resize-detector__grow" style="width: 100000px; height: 100000px;"></div>
+                        </div>
+                        <div class="resize-detector">
+                            <div class="resize-detector__shrink"></div>
+                        </div>
+                    </div>
+                    <div class="ScTransitionBase-sc-hx4quq-0 HHges tw-transition">
+                        <div class="Layout-sc-1xcs6mc-0 kViuhR stream-schedule-day" data-a-target="stream-schedule-day">
+                        </div>
+                        <div class="Layout-sc-1xcs6mc-0 kViuhR stream-schedule-day" data-a-target="stream-schedule-day">
+                            <div tabindex="0" title="BIG CUP D'INOXTAGQ POUR LE DARK JOJO  🏆😈 (je la gagne sous torticolis ) | SUB=DANSE | (!kinguin) (!gillette)
+Fortnite
+175,7&nbsp;k&nbsp;vues · il y a 8 jours" class="Layout-sc-1xcs6mc-0 dIbfID"
+                                style="max-width: 417.523px; width: 417.523px; left: 195.588px;"><button
+                                    class="InjectLayout-sc-1i43xsx-0 daSCXI">
+                                    <div class="Layout-sc-1xcs6mc-0 kOwxmY"
+                                        style="border: 0.1rem solid var(--color-border-base);">
+                                        <div class="Layout-sc-1xcs6mc-0 dDYfNz stream-schedule-segment--element">
+                                            <div class="Layout-sc-1xcs6mc-0 ijQWJd stream-schedule-segment--fade">
+                                                <div class="Layout-sc-1xcs6mc-0 ixTyCq">
+                                                    <p data-test-selector="segment-title"
+                                                        class="CoreText-sc-1txzju1-0 jiereA stream-schedule-segment--text">
+                                                        BIG CUP D'INOXTAGQ POUR LE DARK JOJO 🏆😈 (je la gagne sous
+                                                        torticolis ) | SUB=DANSE | (!kinguin) (!gillette)</p>
+                                                </div>
+                                                <div class="Layout-sc-1xcs6mc-0 hxcIdt">
+                                                    <div
+                                                        class="Layout-sc-1xcs6mc-0 kUcynm stream-schedule-segment--text-wrapper">
+                                                        <div class="ScTokenOverrideCSSVars-sc-13alv3m-0 gkNHFz">
+                                                            <div class="ScAccentRegionCssVars-sc-1gab5n-0 fZnQzg">
+                                                                <p
+                                                                    class="CoreText-sc-1txzju1-0 cFzwPP InjectLayout-sc-1i43xsx-0 hDgGYp stream-schedule-segment--text">
+                                                                    <a class="ScCoreLink-sc-16kq0mq-0 jSrrlW InjectLayout-sc-1i43xsx-0 fVJLKD tw-link"
+                                                                        href="/directory/game/Fortnite">Fortnite</a></p>
+                                                                <div class="Layout-sc-1xcs6mc-0 jWWKHk">·</div>
+                                                                <div class="Layout-sc-1xcs6mc-0 dyQMib"><span
+                                                                        class="CoreText-sc-1txzju1-0 ezjVdV stream-schedule-segment--text">175,7&nbsp;k&nbsp;vues</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Layout-sc-1xcs6mc-0 ktSNSR">
+                                                    <div class="Layout-sc-1xcs6mc-0 gXRMTN">
+                                                        <hr class="stream-schedule-segment--vertical-line"
+                                                            style="margin-right: 0.5rem; border-left-color: rgb(31, 234, 255);">
+                                                        <div class="Layout-sc-1xcs6mc-0"><span
+                                                                class="CoreText-sc-1txzju1-0 fNlqfB stream-schedule-segment--text">il
+                                                                y a 8 jours</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Layout-sc-1xcs6mc-0 gXAEhu"><img
+                                                    src="https://static-cdn.jtvnw.net/cf_vods/dgeft87wbj63p/56fbe6eedb2dff03547e_jolavanille_40624500088_1680625652//thumb/thumb0-320x180.jpg"
+                                                    alt="Fortnite"
+                                                    class="InjectLayout-sc-1i43xsx-0 stream-schedule-segment--boxart">
+                                                <div class="Layout-sc-1xcs6mc-0 cjYuft">
+                                                    <div
+                                                        class="ScMediaCardStatWrapper-sc-anph5i-0 bEHknf tw-media-card-stat">
+                                                        7:21:53</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button></div>
+                        </div>
+                        <div class="Layout-sc-1xcs6mc-0 kViuhR stream-schedule-day" data-a-target="stream-schedule-day">
+                        </div>
+                        <div class="Layout-sc-1xcs6mc-0 kViuhR stream-schedule-day" data-a-target="stream-schedule-day">
+                            <div tabindex="0" title="YEASSSUURRRR VIEN VITE ( petite annonce a 20H)  | SUB = DANSE | (!kinguin) (!gillette)
+Fortnite
+112,2&nbsp;k&nbsp;vues · il y a 6 jours" class="Layout-sc-1xcs6mc-0 dIbfID"
+                                style="max-width: 426.594px; width: 426.594px; left: 245.667px;"><button
+                                    class="InjectLayout-sc-1i43xsx-0 daSCXI">
+                                    <div class="Layout-sc-1xcs6mc-0 kOwxmY"
+                                        style="border: 0.1rem solid var(--color-border-base);">
+                                        <div class="Layout-sc-1xcs6mc-0 dDYfNz stream-schedule-segment--element">
+                                            <div class="Layout-sc-1xcs6mc-0 ijQWJd stream-schedule-segment--fade">
+                                                <div class="Layout-sc-1xcs6mc-0 ixTyCq">
+                                                    <p data-test-selector="segment-title"
+                                                        class="CoreText-sc-1txzju1-0 jiereA stream-schedule-segment--text">
+                                                        YEASSSUURRRR VIEN VITE ( petite annonce a 20H) | SUB = DANSE |
+                                                        (!kinguin) (!gillette)</p>
+                                                </div>
+                                                <div class="Layout-sc-1xcs6mc-0 hxcIdt">
+                                                    <div
+                                                        class="Layout-sc-1xcs6mc-0 kUcynm stream-schedule-segment--text-wrapper">
+                                                        <div class="ScTokenOverrideCSSVars-sc-13alv3m-0 gkNHFz">
+                                                            <div class="ScAccentRegionCssVars-sc-1gab5n-0 fZnQzg">
+                                                                <p
+                                                                    class="CoreText-sc-1txzju1-0 cFzwPP InjectLayout-sc-1i43xsx-0 hDgGYp stream-schedule-segment--text">
+                                                                    <a class="ScCoreLink-sc-16kq0mq-0 jSrrlW InjectLayout-sc-1i43xsx-0 fVJLKD tw-link"
+                                                                        href="/directory/game/Fortnite">Fortnite</a></p>
+                                                                <div class="Layout-sc-1xcs6mc-0 jWWKHk">·</div>
+                                                                <div class="Layout-sc-1xcs6mc-0 dyQMib"><span
+                                                                        class="CoreText-sc-1txzju1-0 ezjVdV stream-schedule-segment--text">112,2&nbsp;k&nbsp;vues</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Layout-sc-1xcs6mc-0 ktSNSR">
+                                                    <div class="Layout-sc-1xcs6mc-0 gXRMTN">
+                                                        <hr class="stream-schedule-segment--vertical-line"
+                                                            style="margin-right: 0.5rem; border-left-color: rgb(31, 234, 255);">
+                                                        <div class="Layout-sc-1xcs6mc-0"><span
+                                                                class="CoreText-sc-1txzju1-0 fNlqfB stream-schedule-segment--text">il
+                                                                y a 6 jours</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Layout-sc-1xcs6mc-0 gXAEhu"><img
+                                                    src="https://static-cdn.jtvnw.net/cf_vods/dgeft87wbj63p/22bb35c22046f44d499d_jolavanille_40629979928_1680801622//thumb/thumb2-320x180.jpg"
+                                                    alt="Fortnite"
+                                                    class="InjectLayout-sc-1i43xsx-0 stream-schedule-segment--boxart">
+                                                <div class="Layout-sc-1xcs6mc-0 cjYuft">
+                                                    <div
+                                                        class="ScMediaCardStatWrapper-sc-anph5i-0 bEHknf tw-media-card-stat">
+                                                        7:31:29</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button></div>
+                        </div>
+                        <div class="Layout-sc-1xcs6mc-0 kViuhR stream-schedule-day" data-a-target="stream-schedule-day">
+                            <div tabindex="0" title="BIG DUO CASH CUP POUR LE DARK JOJO 🏆😈 | SUB=DANSE | (!kinguin) (!gillette)
+Fortnite
+105,5&nbsp;k&nbsp;vues · il y a 5 jours" class="Layout-sc-1xcs6mc-0 dIbfID"
+                                style="max-width: 381.272px; width: 381.272px; left: 200.313px;"><button
+                                    class="InjectLayout-sc-1i43xsx-0 daSCXI">
+                                    <div class="Layout-sc-1xcs6mc-0 kOwxmY"
+                                        style="border: 0.1rem solid var(--color-border-base);">
+                                        <div class="Layout-sc-1xcs6mc-0 dDYfNz stream-schedule-segment--element">
+                                            <div class="Layout-sc-1xcs6mc-0 ijQWJd stream-schedule-segment--fade">
+                                                <div class="Layout-sc-1xcs6mc-0 ixTyCq">
+                                                    <p data-test-selector="segment-title"
+                                                        class="CoreText-sc-1txzju1-0 jiereA stream-schedule-segment--text">
+                                                        BIG DUO CASH CUP POUR LE DARK JOJO 🏆😈 | SUB=DANSE | (!kinguin)
+                                                        (!gillette)</p>
+                                                </div>
+                                                <div class="Layout-sc-1xcs6mc-0 hxcIdt">
+                                                    <div
+                                                        class="Layout-sc-1xcs6mc-0 kUcynm stream-schedule-segment--text-wrapper">
+                                                        <div class="ScTokenOverrideCSSVars-sc-13alv3m-0 gkNHFz">
+                                                            <div class="ScAccentRegionCssVars-sc-1gab5n-0 fZnQzg">
+                                                                <p
+                                                                    class="CoreText-sc-1txzju1-0 cFzwPP InjectLayout-sc-1i43xsx-0 hDgGYp stream-schedule-segment--text">
+                                                                    <a class="ScCoreLink-sc-16kq0mq-0 jSrrlW InjectLayout-sc-1i43xsx-0 fVJLKD tw-link"
+                                                                        href="/directory/game/Fortnite">Fortnite</a></p>
+                                                                <div class="Layout-sc-1xcs6mc-0 jWWKHk">·</div>
+                                                                <div class="Layout-sc-1xcs6mc-0 dyQMib"><span
+                                                                        class="CoreText-sc-1txzju1-0 ezjVdV stream-schedule-segment--text">105,5&nbsp;k&nbsp;vues</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Layout-sc-1xcs6mc-0 ktSNSR">
+                                                    <div class="Layout-sc-1xcs6mc-0 gXRMTN">
+                                                        <hr class="stream-schedule-segment--vertical-line"
+                                                            style="margin-right: 0.5rem; border-left-color: rgb(31, 234, 255);">
+                                                        <div class="Layout-sc-1xcs6mc-0"><span
+                                                                class="CoreText-sc-1txzju1-0 fNlqfB stream-schedule-segment--text">il
+                                                                y a 5 jours</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Layout-sc-1xcs6mc-0 gXAEhu"><img
+                                                    src="https://static-cdn.jtvnw.net/cf_vods/dgeft87wbj63p/7f4bddb0bb8c47d32b26_jolavanille_39479538421_1680885127//thumb/thumb0-320x180.jpg"
+                                                    alt="Fortnite"
+                                                    class="InjectLayout-sc-1i43xsx-0 stream-schedule-segment--boxart">
+                                                <div class="Layout-sc-1xcs6mc-0 cjYuft">
+                                                    <div
+                                                        class="ScMediaCardStatWrapper-sc-anph5i-0 bEHknf tw-media-card-stat">
+                                                        6:43:31</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button></div>
+                        </div>
+                        <div class="Layout-sc-1xcs6mc-0 kViuhR stream-schedule-day" data-a-target="stream-schedule-day">
+                            <div tabindex="0" title="VIEN PASSER UN BON WEEK END MA MOUMOU 🥰  | SUB=DANSE | (!kinguin) (!gillette)
+Fortnite
+104,7&nbsp;k&nbsp;vues · il y a 4 jours" class="Layout-sc-1xcs6mc-0 dIbfID"
+                                style="max-width: 453.79px; width: 453.79px; left: 198.423px;"><button
+                                    class="InjectLayout-sc-1i43xsx-0 daSCXI">
+                                    <div class="Layout-sc-1xcs6mc-0 kOwxmY"
+                                        style="border: 0.1rem solid var(--color-border-base);">
+                                        <div class="Layout-sc-1xcs6mc-0 dDYfNz stream-schedule-segment--element">
+                                            <div class="Layout-sc-1xcs6mc-0 ijQWJd stream-schedule-segment--fade">
+                                                <div class="Layout-sc-1xcs6mc-0 ixTyCq">
+                                                    <p data-test-selector="segment-title"
+                                                        class="CoreText-sc-1txzju1-0 jiereA stream-schedule-segment--text">
+                                                        VIEN PASSER UN BON WEEK END MA MOUMOU 🥰 | SUB=DANSE |
+                                                        (!kinguin) (!gillette)</p>
+                                                </div>
+                                                <div class="Layout-sc-1xcs6mc-0 hxcIdt">
+                                                    <div
+                                                        class="Layout-sc-1xcs6mc-0 kUcynm stream-schedule-segment--text-wrapper">
+                                                        <div class="ScTokenOverrideCSSVars-sc-13alv3m-0 gkNHFz">
+                                                            <div class="ScAccentRegionCssVars-sc-1gab5n-0 fZnQzg">
+                                                                <p
+                                                                    class="CoreText-sc-1txzju1-0 cFzwPP InjectLayout-sc-1i43xsx-0 hDgGYp stream-schedule-segment--text">
+                                                                    <a class="ScCoreLink-sc-16kq0mq-0 jSrrlW InjectLayout-sc-1i43xsx-0 fVJLKD tw-link"
+                                                                        href="/directory/game/Fortnite">Fortnite</a></p>
+                                                                <div class="Layout-sc-1xcs6mc-0 jWWKHk">·</div>
+                                                                <div class="Layout-sc-1xcs6mc-0 dyQMib"><span
+                                                                        class="CoreText-sc-1txzju1-0 ezjVdV stream-schedule-segment--text">104,7&nbsp;k&nbsp;vues</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Layout-sc-1xcs6mc-0 ktSNSR">
+                                                    <div class="Layout-sc-1xcs6mc-0 gXRMTN">
+                                                        <hr class="stream-schedule-segment--vertical-line"
+                                                            style="margin-right: 0.5rem; border-left-color: rgb(31, 234, 255);">
+                                                        <div class="Layout-sc-1xcs6mc-0"><span
+                                                                class="CoreText-sc-1txzju1-0 fNlqfB stream-schedule-segment--text">il
+                                                                y a 4 jours</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Layout-sc-1xcs6mc-0 gXAEhu"><img
+                                                    src="https://static-cdn.jtvnw.net/cf_vods/dgeft87wbj63p/8e7d082168d279c0d40e_jolavanille_40635617496_1680971430//thumb/thumb2-320x180.jpg"
+                                                    alt="Fortnite"
+                                                    class="InjectLayout-sc-1i43xsx-0 stream-schedule-segment--boxart">
+                                                <div class="Layout-sc-1xcs6mc-0 cjYuft">
+                                                    <div
+                                                        class="ScMediaCardStatWrapper-sc-anph5i-0 bEHknf tw-media-card-stat">
+                                                        8:00:16</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button></div>
+                        </div>
+                        <div class="Layout-sc-1xcs6mc-0 kViuhR stream-schedule-day" data-a-target="stream-schedule-day">
+                            <div tabindex="0" title="BIG SOLO CASH CUP POUR LE DARK JOJO 😈🏆 | SUB=DANSE | (!kinguin) (!gillette)
+Fortnite
+172,5&nbsp;k&nbsp;vues · il y a 3 jours" class="Layout-sc-1xcs6mc-0 dIbfID"
+                                style="max-width: 576.939px; width: 576.939px; left: 46.2987px;"><button
+                                    class="InjectLayout-sc-1i43xsx-0 daSCXI">
+                                    <div class="Layout-sc-1xcs6mc-0 kOwxmY"
+                                        style="border: 0.1rem solid var(--color-border-base);">
+                                        <div class="Layout-sc-1xcs6mc-0 dDYfNz stream-schedule-segment--element">
+                                            <div class="Layout-sc-1xcs6mc-0 ijQWJd stream-schedule-segment--fade">
+                                                <div class="Layout-sc-1xcs6mc-0 ixTyCq">
+                                                    <p data-test-selector="segment-title"
+                                                        class="CoreText-sc-1txzju1-0 jiereA stream-schedule-segment--text">
+                                                        BIG SOLO CASH CUP POUR LE DARK JOJO 😈🏆 | SUB=DANSE |
+                                                        (!kinguin) (!gillette)</p>
+                                                </div>
+                                                <div class="Layout-sc-1xcs6mc-0 hxcIdt">
+                                                    <div
+                                                        class="Layout-sc-1xcs6mc-0 kUcynm stream-schedule-segment--text-wrapper">
+                                                        <div class="ScTokenOverrideCSSVars-sc-13alv3m-0 gkNHFz">
+                                                            <div class="ScAccentRegionCssVars-sc-1gab5n-0 fZnQzg">
+                                                                <p
+                                                                    class="CoreText-sc-1txzju1-0 cFzwPP InjectLayout-sc-1i43xsx-0 hDgGYp stream-schedule-segment--text">
+                                                                    <a class="ScCoreLink-sc-16kq0mq-0 jSrrlW InjectLayout-sc-1i43xsx-0 fVJLKD tw-link"
+                                                                        href="/directory/game/Fortnite">Fortnite</a></p>
+                                                                <div class="Layout-sc-1xcs6mc-0 jWWKHk">·</div>
+                                                                <div class="Layout-sc-1xcs6mc-0 dyQMib"><span
+                                                                        class="CoreText-sc-1txzju1-0 ezjVdV stream-schedule-segment--text">172,5&nbsp;k&nbsp;vues</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Layout-sc-1xcs6mc-0 ktSNSR">
+                                                    <div class="Layout-sc-1xcs6mc-0 gXRMTN">
+                                                        <hr class="stream-schedule-segment--vertical-line"
+                                                            style="margin-right: 0.5rem; border-left-color: rgb(31, 234, 255);">
+                                                        <div class="Layout-sc-1xcs6mc-0"><span
+                                                                class="CoreText-sc-1txzju1-0 fNlqfB stream-schedule-segment--text">il
+                                                                y a 3 jours</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Layout-sc-1xcs6mc-0 gXAEhu"><img
+                                                    src="https://static-cdn.jtvnw.net/cf_vods/dgeft87wbj63p/ca1652ed426ad5cc8e03_jolavanille_39485366965_1681048147//thumb/thumb1-320x180.jpg"
+                                                    alt="Fortnite"
+                                                    class="InjectLayout-sc-1i43xsx-0 stream-schedule-segment--boxart">
+                                                <div class="Layout-sc-1xcs6mc-0 cjYuft">
+                                                    <div
+                                                        class="ScMediaCardStatWrapper-sc-anph5i-0 bEHknf tw-media-card-stat">
+                                                        10:10:36</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
